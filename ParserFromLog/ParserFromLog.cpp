@@ -85,7 +85,7 @@ class LogChecker {
 
 public:
 
-	LogChecker(string LogFileName, string ParsAfter, string FileName) {
+	LogChecker(string LogFileName, string ParsAfter, string FileName = "Script.bat") {
 		this->LogFileName = LogFileName;
 		this->ParsAfter = ParsAfter;
 		this->FileName = FileName;
@@ -104,6 +104,6 @@ public:
 int main()
 {
 	console_cp();
-	LogChecker Script("workshop_log.txt", "Download item ", "Script.bat");
+	LogChecker Script("workshop_log.txt", " [AppID 294100] Download item ", "Script.bat");
 	Script.StarScript();
 }
